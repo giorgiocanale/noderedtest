@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "e4c9f130e39df3b8",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "28d56754df58fd73",
         "type": "inject",
         "z": "3b1e4be0359ac91f",
@@ -90,6 +98,33 @@
             [
                 "bd8f2b60bb3f5db7"
             ]
+        ]
+    },
+    {
+        "id": "63ca150027a7f60c",
+        "type": "inject",
+        "z": "e4c9f130e39df3b8",
+        "name": "cambiodila",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 120,
+        "wires": [
+            []
         ]
     }
 ]
