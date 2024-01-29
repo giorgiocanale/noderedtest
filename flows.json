@@ -1,1 +1,95 @@
-[]
+[
+    {
+        "id": "3b1e4be0359ac91f",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "28d56754df58fd73",
+        "type": "inject",
+        "z": "3b1e4be0359ac91f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 120,
+        "wires": [
+            [
+                "00f1630c455ac609"
+            ]
+        ]
+    },
+    {
+        "id": "bd8f2b60bb3f5db7",
+        "type": "debug",
+        "z": "3b1e4be0359ac91f",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "00f1630c455ac609",
+        "type": "function",
+        "z": "3b1e4be0359ac91f",
+        "name": "istanza1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 180,
+        "wires": [
+            [
+                "f6fb023f44376b3d"
+            ]
+        ]
+    },
+    {
+        "id": "f6fb023f44376b3d",
+        "type": "function",
+        "z": "3b1e4be0359ac91f",
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 120,
+        "wires": [
+            [
+                "bd8f2b60bb3f5db7"
+            ]
+        ]
+    }
+]
